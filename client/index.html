@@ -5,6 +5,33 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CeylonMate_v3</title>
+    <script>
+      (function (w, d, s, o, f, js, fjs) {
+        w[o] = w[o] || function () {
+          (w[o].q = w[o].q || []).push(arguments)
+        };
+        js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+        js.id = o; js.src = f; js.async = 1;
+        fjs.parentNode.insertBefore(js, fjs)
+      }
+        (window, document, 'script', 'nw', 'https://chat.norby.io/widget'));
+      nw('init', {
+        apiKey: 'ab57c7d6-05a9-4794-822f-f503fc5bbc3c',
+        serviceBaseUrl: 'https://api.norby.io',
+        lang: 'en',
+        languageList: ['EN', 'RU', 'EE', 'IT', 'FR', 'DE', 'UA', 'ES', 'FI', 'SV', 'DA', 'NO', 'PL', 'PT', 'TR', 'ZH', 'JA'],
+        mainColor: '#0EACA1',
+        popupBotAvatarColor: '#0EACA1',
+        multichat: true,
+        botName: 'CeylonMate',
+        imageTransferEnabled: true,
+        side: 'right',
+        marginSideDesktop: 80,
+        marginBottomDesktop: 48,
+        marginSideMobile: 16,
+        marginBottomMobile: 16
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>

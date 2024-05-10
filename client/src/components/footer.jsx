@@ -3,11 +3,7 @@ import { Typography } from "@material-tailwind/react";
 const LINKS = [
   {
     title: "Information",
-    items: ["About", "Contact Us", "Outlets"],
-  },
-  {
-    title: "My Account",
-    items: ["My Orders", "Lost Password", "Track Order"],
+    items: ["About", "Contact Us", "Destinations"],
   },
   {
     title: "Get in Touch",
@@ -19,20 +15,23 @@ const currentYear = new Date().getFullYear();
  
 export function FooterWithSocialLinks() {
   return (
-    <footer className="relative w-full h-full pt-[50px] bg-c2">
+    <footer className="w-full h-[500px] pt-[50px] bg-gradient-to-tl from-c1 to-c3">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-2 justify-between gap-5 md:grid-cols-1">
-        <img src="./src/assets/logos/logo.jpg" class="w-20 h-20" alt="logo" />
-          <Typography variant="h5" className="mb-2 font-extrabold font-[Montserrat]">
-            PERERA BAKERS
+        <img src="./src/assets/logo1.png" class="w-28 h-28" alt="logo" />
+          <Typography variant="h5" className="mb-2 font-extrabold text-c2 font-[Montserrat]">
+            CEYLONMATE
+          </Typography>
+          <Typography variant="h5" className="-mt-8 font-medium text-c2 opacity-80 shadow-c4 text-sm font-[Montserrat]">
+            One-stop travel companion
           </Typography>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-medium justify-between gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
                 <Typography
                   variant="medium"
-                  color="blue-gray"
-                  className=" font-bold opacity-60 font-[Montserrat]"
+                  color="white"
+                  className="font-bold opacity-70 font-[Montserrat]"
                 >
                   {title}
                 </Typography>
@@ -41,8 +40,8 @@ export function FooterWithSocialLinks() {
                     <Typography
                       as="a"
                       href="#"
-                      color="gray"
-                      className="py-1.5 font-medium transition-colors hover:text-blue-gray-900"
+                      color="white"
+                      className="py-1.5 font-medium opacity-60 transition-colors"
                     >
                       {link}
                     </Typography>
@@ -55,12 +54,12 @@ export function FooterWithSocialLinks() {
         <div className="mt-12 flex w-full h-full flex-col items-center justify-center  py-4 md:flex-row md:justify-between">
           <Typography
             variant="small"
-            className=" text-center font-normal text-blue-gray-900 md:mb-0"
+            className=" text-center font-normal text-c2 opacity-80"
           >
-            &copy; {currentYear} <a href="https://material-tailwind.com/">Perera Bakers</a>. All
+            &copy; {currentYear} <a href="https://material-tailwind.com/">CeylonMate</a>. All
             Rights Reserved.
           </Typography>
-          <div className="flex gap-x-4 text-blue-gray-900 sm:justify-center">
+          <div className="flex gap-x-4 text-c2 sm:justify-center">
             <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
